@@ -40,7 +40,7 @@ Enter name for second sequence: Sequence 2
 Enter second sequence: PAWHEAE
 
 ### Example Output
-
+```
 Final Alignment Score: 12
 
 Aligned Sequences:
@@ -49,7 +49,7 @@ Seq1: HEAGAWGHE-E
 Seq2: --P-AW-HEAE
 
 ✅ Alignment saved to alignment.fasta
-
+```
 ### Heatmap Output
 
 <p align="center">
