@@ -1,35 +1,155 @@
-# Needleman-Wunsch Sequence Aligner (with BLOSUM62)
+# 🧬 Needleman-Wunsch Aligner with BLOSUM62 + Heatmap
 
-This project implements a global sequence alignment tool using the Needleman-Wunsch algorithm and the BLOSUM62 substitution matrix. The tool also generates a heatmap of the alignment scoring matrix using Seaborn.
+A Python-based global sequence alignment tool implementing the **Needleman-Wunsch algorithm** with **BLOSUM62 scoring** and a **heatmap visualization** of the dynamic programming matrix using `seaborn`.
 
-## 🔬 Features
-- Global alignment of two protein sequences
-- Uses BLOSUM62 from Biopython
-- Visual heatmap of the scoring matrix with traceback path overlay
-- FASTA-style alignment output
-- Optional PNG export of the heatmap
+---
 
-## 📦 Dependencies
-- Python 3.8+
-- NumPy
-- Pandas
-- Seaborn
-- Matplotlib
-- Biopython
+## 📌 Features
 
-Install them via:
+- Global alignment using Needleman-Wunsch algorithm
+- Customizable **gap penalty**
+- Uses **BLOSUM62** matrix via Biopython
+- Visualizes the scoring matrix as a **color-coded heatmap**
+- Highlights the **traceback path** (optimal alignment route)
+- Displays aligned sequences with match indicators (`|`)
+- Export heatmap as `.png`
+- Supports **FASTA-style output**
+- Simple interactive prompts — no CLI required
+
+---
+
+## 🚀 Project Structure
+
+NeedlemanWunschAligner/
+├── Aligner.py
+├── README.md
+├── example_output.png
+└── sequences/
+├── sample1.txt
+└── sample2.txt
+
+---
+
+## 🧪 Sample Input/Output
+
+### Example Input
+
+Enter name for first sequence: Sequence 1
+Enter first sequence: HEAGAWGHEE
+Enter name for second sequence: Sequence 2
+Enter second sequence: PAWHEAE
+
+### Example Output
+
+Final Alignment Score: 12
+
+Aligned Sequences:
+Seq1: HEAGAWGHE-E
+          || || |
+Seq2: --P-AW-HEAE
+
+✅ Alignment saved to alignment.fasta
+
+### Heatmap Output
+
+<p align="center">
+  <img src="alignment_heatmap.png" width="600" alt="Heatmap">
+</p>
+
+---
+
+## 🧰 Dependencies
+
+Make sure you have Python 3.7+ installed.
+
+Install required libraries:
 
 ```bash
-pip install -r requirements.txt
+pip3 install biopython pandas seaborn matplotlib
 
-## Tags
+```
+---
 
-bioinformatics, sequence alignment, Needleman-Wunsch, Python, BLOSUM62, Biopython, data visualization, portfolio project
+## 📦 How to Use
+1. Clone this repository:
 
-## Contact
+```bash
+git clone https://github.com/your-username/NeedlemanWunschAligner.git
+cd NeedlemanWunschAligner
 
-Arunannamalai Sujatha Bharath Raj  
-Email: arun03bt@gmail.com  
-LinkedIn: [linkedin.com/in/arunannamalai](https://www.linkedin.com/in/arunannamalai-sb-823351344)
-GitHub: [github.com/Arun0364](https://github.com/Arun0364)
+```
+2. Run the program:
+
+```bash
+python3 Aligner.py
+
+```
+3. Follow on-screen input prompts.
+
+4. A PNG heatmap of the alignment matrix will be saved as alignment_heatmap.png in the same directory.
+
+---
+
+## 📄 Output Format
+
++ Text alignment with match bars: Prints aligned sequences side-by-side with | for matches.
+
++ Heatmap PNG: Visual depiction of score matrix.
+
++ Optional (Advanced): Easily export aligned output in FASTA-style formatting.
+
+---
+
+## 🧠 How it Works
+
+* Initializes a dynamic programming matrix using NumPy.
+
+* Fills scores using BLOSUM62 substitution matrix.
+
+* Traces the optimal alignment path using standard traceback rules.
+
+* Constructs two aligned sequences with insertions (-) where needed.
+
+* Highlights the traceback path on the heatmap with red circles.
+
+---
+
+## 🏷️ Tags
+
+#Bioinformatics #Python #NeedlemanWunsch #GlobalAlignment #BLOSUM62 #Heatmap #SequenceAlignment #PortfolioProject #FASTA
+
+---
+
+## 👤 Contact
+
+Arunannamalai Sujatha Bharath Raj
+
+📧 [arun03bt@gmail.com]
+
+🔗 https://www.linkedin.com/in/arunannamalai-sb-823351344/
+
+🐙 https://github.com/Arun0364
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the LICENSE file for details.
+
+---
+
+## ❤️ Acknowledgments
+
+Biopython for substitution matrices
+
+Seaborn & Matplotlib for heatmaps
+
+Classic Needleman-Wunsch algorithm (1970)
+
+
+
+
+
+
+
 
