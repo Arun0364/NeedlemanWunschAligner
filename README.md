@@ -21,7 +21,7 @@ Install them via:
 
 ```bash
 pip install -r requirements.txt
-
+```
 ## Tags
 
 bioinformatics, sequence alignment, Needleman-Wunsch, Python, BLOSUM62, Biopython, data visualization, portfolio project
