@@ -33,11 +33,12 @@ A Python-based global sequence alignment tool implementing the **Needleman-Wunsc
 ## 🧪 Sample Input/Output
 
 ### Example Input
-
+```
 Enter name for first sequence: Sequence 1
 Enter first sequence: HEAGAWGHEE
 Enter name for second sequence: Sequence 2
 Enter second sequence: PAWHEAE
+```
 
 ### Example Output
 ```
