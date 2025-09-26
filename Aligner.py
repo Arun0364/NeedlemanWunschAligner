@@ -106,7 +106,7 @@ def needleman_wunsch_blosum(seq1, seq2, name1="Seq1", name2="Seq2", gap=-4):
 	print("\nFinal Alignment Score:", score_matrix[n][m])
 	print("\nAligned Sequences:")
 	print("Seq1:", align1)
-	print("     ", ''.join('|' if a == b else ' ' for a, b in zip(align1, align2)))
+	print("     ", ''.join('|' if a == b else '-' for a, b in zip(align1, align2)))
 	print("Seq2:", align2)
 
 	# Save aligned sequences to a FASTA file
