@@ -34,9 +34,9 @@ A Python-based global sequence alignment tool implementing the **Needleman-Wunsc
 
 ### Example Input
 ```
-Enter name for first sequence: Sequence 1
+Enter name for first sequence: Seq 1
 Enter first sequence: HEAGAWGHEE
-Enter name for second sequence: Sequence 2
+Enter name for second sequence: Seq 2
 Enter second sequence: PAWHEAE
 ```
 
@@ -46,7 +46,7 @@ Final Alignment Score: 12
 
 Aligned Sequences:
 Seq1: HEAGAWGHE-E
-          || || |
+      ----||-||-|
 Seq2: --P-AW-HEAE
 
 ✅ Alignment saved to alignment.fasta
